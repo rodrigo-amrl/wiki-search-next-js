@@ -21,6 +21,7 @@ export async function generateMatadata({ params: { searchTerm } }: Props) {
 export default async function page({ params: { searchTerm } }: Props) {
     const wikiData: Promise<SearchResult> = getWikiResults(searchTerm)
     const data = await wikiData
+    console.log(data, 20)
     const results: Result[] | undefined = data?.query.pages
     const content = (
         <main className='bg-slate-200 text-black mx-auto max-w-lg py-1 min-h-screen'>

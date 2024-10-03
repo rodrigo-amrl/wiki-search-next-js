@@ -3,8 +3,7 @@ export default function Home() {
   return (
     <div>
       <main >
-        <h1>Hellow World!</h1>
-        <Link href="/about">Go to about page</Link>
+        <h1>Welcome!</h1>
       </main>
     </div>
   );

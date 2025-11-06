@@ -1,4 +1,14 @@
 import Link from "next/link"
+type Result = {
+    pageid: number
+    title: string
+    extract: string
+    thumbnail?: {
+        source: string
+        width: number
+        height: number
+    }
+}
 type Props = {
     result: Result
 }
